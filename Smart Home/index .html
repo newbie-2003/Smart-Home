@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Home Control</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Smart Home Control</h1>
+    <div class="container">
+       
+        <div class="device-container">
+            <h2>Fan</h2>
+            <img src="icons8-fan-64.png" alt="" srcset="" class="icon">
+            <p class="cardDesc">Current Speed: <span id="fan-speed-display">0</span></p>
+            <input type="range" id="fan-speed-slider" class="control-slider" min="0" max="5" step="1" value="0">
+            <button id="fan-toggle" class="control-btn">Toggle</button>
+        </div>
+        <div class="device-container">
+            <h2>Bulb</h2>
+            <img src="icons8-bulb-80.png" alt="" class="icon">
+            <button id="bulb-toggle" class="control-btn">Toggle</button>
+        </div>
+        <div class="device-container">
+            <h2>LED</h2>
+            <img src="icons8-led-bulb-64.png" alt="" class="icon">
+            <input type="color" id="led-color">
+            <button id="led-toggle" class="control-btn">Toggle</button>
+            <p id="led-message"></p> 
+        </div>
+        
+        
+        <div class="device-container">
+            <h2>AC</h2>
+            <img src="icons8-ac-64.png" alt="" class="icon">
+            <p class="cardDesc">Temperature: <span id="ac-temp-display">20</span>°C</p>
+            <input type="range" id="ac-temperature-slider" class="control-slider" min="16" max="30" step="1" value="20">
+            <button id="ac-toggle" class="control-btn">Toggle</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
