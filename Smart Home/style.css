@@ -1,77 +1,61 @@
-*{
-    margin: 0;  
+/* Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    background: linear-gradient(45deg, #00d2ff, #3a7bd5); /* Gradient background */
 }
 
-body{
-    height: 100%;
-    width: 100%;
-
-    
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center; 
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: space-between; 
 }
 
-.parentContainer{
-height: 100vh;
-width: 80%;
-margin: auto;
-
-display: flex;
-flex-direction: column;
-
-}
-
-header{
-    margin: 1rem;
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
+h1 {
     text-align: center;
-
-    margin-top: 8rem;
+    color: #fff; /* White text color */
+    width: 100%; /* Ensure full width */
 }
 
-.contentHeader{
-    font-size: 1rem;
+/* Device Container Styles */
+.device-container {
+    width: calc(25% - 20px); /* Adjust width to fit four cards in a row */
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+    box-sizing: border-box; /* Ensure padding and border are included in width calculation */
+    background-color: #fff; /* White background color */
 }
 
-.headerDesc{
-    font-size: 1.2rem;
+.device-container h2 {
+    margin-top: 0;
 }
 
-.mainContainer{
-    width: 80%;
-    margin: auto;
-    background-color: white;
-    padding: 1rem;
-    /* border: 1px solid black; */
-    
-    
-    display: grid;
-    gap: 1rem;
-    grid-template-columns: repeat(4, 1fr);
-    
+/* Control Button Styles */
+.control-btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
 }
 
-.cardContainer{
-    height: 350px;
-   
-    padding: 1rem;
-    /* border: 1px solid rgb(16, 16, 16); */
-    border-radius: 10px;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
-
-    
+.control-btn:hover {
+    background-color: #0056b3;
 }
 
-.cardContent{
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
-}
-
-.icon{
-    height: 50px;
-    width: 50px;
+/* Control Slider Styles */
+.control-slider {
+    width: 100%;
 }
