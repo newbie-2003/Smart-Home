@@ -1,0 +1,77 @@
+*{
+    margin: 0;  
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+
+    
+}
+
+.parentContainer{
+height: 100vh;
+width: 80%;
+margin: auto;
+
+display: flex;
+flex-direction: column;
+
+}
+
+header{
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+
+    margin-top: 8rem;
+}
+
+.contentHeader{
+    font-size: 1rem;
+}
+
+.headerDesc{
+    font-size: 1.2rem;
+}
+
+.mainContainer{
+    width: 80%;
+    margin: auto;
+    background-color: white;
+    padding: 1rem;
+    /* border: 1px solid black; */
+    
+    
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(4, 1fr);
+    
+}
+
+.cardContainer{
+    height: 350px;
+   
+    padding: 1rem;
+    /* border: 1px solid rgb(16, 16, 16); */
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+
+    
+}
+
+.cardContent{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.icon{
+    height: 50px;
+    width: 50px;
+}
