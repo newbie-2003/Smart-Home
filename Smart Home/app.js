@@ -10,7 +10,7 @@ async function controlDevice(device, value) {
                 "Content-Type": "application/json"
             },
             body: JSON.stringify({
-                teamid: "YOUR_TEAM_ID", // Replace with your team ID
+                teamid: "738Sw35", // Replace with your team ID
                 device: device,
                 value: value
             })
