@@ -1,0 +1,121 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+    width: 100vw;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%); /* Gradient background */
+    background-blend-mode: multiply;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center; 
+
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 2rem;
+}
+
+
+h1 {
+    text-align: center;
+    color: #fff; 
+    width: 100%; 
+    margin-bottom: 3rem;
+    font-weight: 800;
+}
+
+
+.device-container {
+    
+    border: 1px solid rgb(132, 130, 130);
+    padding: 50px;
+    border-radius:17px;
+    background-color: #fff; 
+
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.device-container:hover{
+    background-image: linear-gradient(to top, #dad4ec 0%, #dad4ec 1%, #f3e7e9 100%);
+    transform: scale(1.05);
+    transition-duration: 200ms;
+}
+.icon{
+height: 100px;
+width: 100px;
+align-self: center;
+}
+
+.device-container h2 {
+    margin-top: 0;
+}
+
+.control-btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+
+    border: none;
+    border-radius: 50px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+
+}
+.control-btn-1{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+
+    border: none;
+    border-radius: 50px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+
+
+    margin-top: 63px;
+}
+.control-btn-2{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+
+    border: none;
+    border-radius: 50px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+
+
+    margin-top: 75px;
+}
+
+.control-btn:hover {
+    background-color: #0056b3;
+}
+
+.control-slider {
+    width: 100%;
+}
